@@ -39,3 +39,17 @@ Por seguridad, Linux no deja que Jellyfin apague el sistema. Hay que autorizarlo
 ```bash
 # Crear regla de sudo para permitir apagado sin contraseña
 echo "jellyfin ALL=(ALL) NOPASSWD: /usr/sbin/shutdown" | sudo tee /etc/sudoers.d/jellyfin-shutdown
+```
+
+### 2. Configurar el comando en Jellyfin
+1.  Entrar en **Panel de Control** -> **General**.
+2.  Buscar la sección "Comando de apagado".
+3.  Introducir el siguiente comando:
+```bash
+/usr/sbin/shutdown -h now
+```
+4.  Guardar cambios.
+
+### 3. Uso
+En la app de Jellyfin (Móvil, Tablet o TV), abrir el menú lateral. Aparecerá un nuevo botón "Apagar" que iniciará la secuencia de cierre del sistema.
+
