@@ -36,8 +36,6 @@ Para que esto funcione, la Raspberry Pi debe tener configurado Samba (`sudo apt 
 
 ---
 
----
-
 ## 🔌 Opción C: Método Físico (Conexión Directa al PC)
 *El método más rápido para transferencias masivas (ej: muchas películas 4K).*
 
