@@ -26,10 +26,12 @@ Ejecuta el siguiente comando en la terminal de la Raspberry Pi:
 
 ```bash
 sudo usermod -aG video,render jellyfin
+```
 
 Importante: Reinicia el sistema para aplicar los cambios:
 ```bash
 sudo reboot
+```
 
 ### 2. Configuración de Transcodificación (Panel de Control Jellyfin)
 Una vez reiniciado, ajusta la configuración en **Panel de Control** -> **Reproducción**:
