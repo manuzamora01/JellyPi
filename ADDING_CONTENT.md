@@ -36,6 +36,36 @@ Para que esto funcione, la Raspberry Pi debe tener configurado Samba (`sudo apt 
 
 ---
 
+---
+
+## 🔌 Opción C: Método Físico (Conexión Directa al PC)
+*El método más rápido para transferencias masivas (ej: muchas películas 4K).*
+
+Este método consiste en apagar la Raspberry Pi, desconectar el disco duro y enchufarlo directamente a tu ordenador principal para copiar los archivos a máxima velocidad.
+
+### Pasos a seguir:
+
+1.  **Apagado Seguro:**
+    * Apaga la Raspberry Pi usando el botón de la app, el widget o el comando `sudo poweroff`.
+    * Espera a que la luz verde deje de parpadear y desconecta la corriente.
+2.  **Conexión al PC:**
+    * Desconecta el disco duro USB de la Raspberry Pi.
+    * Conéctalo a tu ordenador (Windows/Mac).
+3.  **Transferencia:**
+    * Copia las películas y series a las carpetas correspondientes dentro del disco.
+    * **IMPORTANTE:** Recuerda expulsar el disco de forma segura en tu ordenador antes de desconectarlo ("Quitar hardware con seguridad").
+4.  **Reconexión:**
+    * Vuelve a conectar el disco duro a la Raspberry Pi (intenta usar el mismo puerto USB que usabas antes).
+    * Enciende la Raspberry Pi.
+5.  **Verificación:**
+    * Jellyfin debería detectar el disco automáticamente al arrancar. Si no aparecen las películas nuevas, dale a "Escanear biblioteca" manualmente.
+
+> **⚠️ Nota sobre Formatos de Disco (Windows vs Linux):**
+> * Si tu disco duro está formateado en **NTFS** o **exFAT** (lo estándar en Windows), tu PC lo reconocerá al instante.
+> * Si formateaste el disco en **EXT4** (el formato nativo de Linux/Raspberry) para ganar rendimiento, **Windows no reconocerá el disco** al conectarlo. En ese caso, deberás usar una herramienta como *Linux File Systems for Windows* o usar la Opción A (Red).
+
+---
+
 ## 🏷️ Nombramiento de Archivos (Importante)
 Para que Jellyfin descargue las carátulas y sinopsis correctamente, sigue esta estructura:
 
